@@ -434,6 +434,24 @@
     </div>
 
     <div class="form-group">
+      <label>What are you interested in?</label>
+      <div style="display:flex; flex-direction:column; gap:0.6rem; margin-top:0.4rem;">
+        <label style="display:flex; align-items:center; gap:0.6rem; font-size:0.9rem; font-weight:400; letter-spacing:0.02em; cursor:pointer;">
+          <input type="checkbox" name="interest_type" value="site" style="width:16px; height:16px; accent-color:var(--forest);"> A memorial website
+        </label>
+        <label style="display:flex; align-items:center; gap:0.6rem; font-size:0.9rem; font-weight:400; letter-spacing:0.02em; cursor:pointer;">
+          <input type="checkbox" name="interest_type" value="book" style="width:16px; height:16px; accent-color:var(--forest);"> A legacy book
+        </label>
+        <label style="display:flex; align-items:center; gap:0.6rem; font-size:0.9rem; font-weight:400; letter-spacing:0.02em; cursor:pointer;">
+          <input type="checkbox" name="interest_type" value="both" style="width:16px; height:16px; accent-color:var(--forest);"> Both
+        </label>
+        <label style="display:flex; align-items:center; gap:0.6rem; font-size:0.9rem; font-weight:400; letter-spacing:0.02em; cursor:pointer;">
+          <input type="checkbox" name="interest_type" value="planning_ahead" style="width:16px; height:16px; accent-color:var(--forest);"> I'm planning ahead — my loved one is still with us
+        </label>
+      </div>
+    </div>
+
+    <div class="form-group">
       <label for="message">Tell us a little about your loved one (optional)</label>
       <textarea id="message" name="message" placeholder="Who they were, what you're hoping for, any timeframe…"></textarea>
     </div>
