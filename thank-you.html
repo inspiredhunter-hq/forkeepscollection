@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thank You — For Keeps Collection</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --forest: #1e3d30;
+    --gold: #c9a84c;
+    --gold-light: #e4c97e;
+    --cream: #fdf8f0;
+    --text-dark: #101e18;
+    --text-mid: #3a5040;
+  }
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Jost', sans-serif;
+    background: var(--cream);
+    color: var(--text-dark);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 3rem 2rem;
+  }
+  nav {
+    position: fixed; top: 0; left: 0; right: 0;
+    background: rgba(253,248,240,0.94);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(201,168,76,0.2);
+    padding: 0 2rem;
+    display: flex; align-items: center; height: 60px;
+  }
+  .nav-logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem; font-style: italic;
+    color: var(--forest); letter-spacing: 0.04em;
+    text-decoration: none;
+  }
+  .diamond {
+    width: 10px; height: 10px;
+    background: var(--gold);
+    transform: rotate(45deg);
+    margin: 2rem auto;
+  }
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 400;
+    color: var(--forest);
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+  }
+  p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.25rem;
+    color: var(--text-mid);
+    max-width: 480px;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+  }
+  .back-link {
+    display: inline-block;
+    margin-top: 2.5rem;
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--forest);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(30,61,48,0.3);
+    padding-bottom: 2px;
+  }
+  .back-link:hover { border-bottom-color: var(--gold); color: var(--gold); }
+</style>
+</head>
+<body>
+<nav>
+  <a href="/" class="nav-logo">For Keeps Collection</a>
+</nav>
+
+<div class="diamond"></div>
+<h1>Thank you.<br><em>We'll be in touch.</em></h1>
+<p>We've received your interest and we're grateful you reached out.</p>
+<p>When we're ready to take on our first families, you'll hear from us — gently, and only then.</p>
+<a href="/" class="back-link">← Back to For Keeps Collection</a>
+
+</body>
+</html>
