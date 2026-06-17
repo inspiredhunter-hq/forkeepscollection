@@ -1,12 +1,5 @@
 const NOTION_VERSION = "2022-06-28";
 
-const INTEREST_LABELS = {
-  site: "Memorial website",
-  book: "Legacy book",
-  both: "Both",
-  planning_ahead: "Planning ahead",
-};
-
 exports.handler = async (event) => {
   try {
     const body = JSON.parse(event.body || "{}");
@@ -23,7 +16,10 @@ exports.handler = async (event) => {
     } else if (typeof raw === "string" && raw.length) {
       interests = raw.split(",").map((s) => s.trim());
     }
-    const interestedIn = interests.map((v) => INTEREST_LABELS[v] || v).filter(Boolean);
+
+    const wantsWebsite = interests.includes("site") || interests.includes("both");
+    const wantsBook = interests.includes("book") || interests.includes("both");
+    const wantsPlanningAhead = interests.includes("planning_ahead");
 
     const res = await fetch("https://api.notion.com/v1/pages", {
       method: "POST",
@@ -37,7 +33,9 @@ exports.handler = async (event) => {
         properties: {
           Name: { title: [{ text: { content: name } }] },
           Email: { email: email || null },
-          "Interested In": { multi_select: interestedIn.map((n) => ({ name: n })) },
+          "Memorial website": { checkbox: wantsWebsite },
+          "Legacy book": { checkbox: wantsBook },
+          "Planning ahead": { checkbox: wantsPlanningAhead },
           Message: { rich_text: message ? [{ text: { content: message } }] : [] },
           Submitted: { date: { start: new Date().toISOString() } },
           Status: { select: { name: "New" } },
