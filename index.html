@@ -407,8 +407,9 @@
     and we'll reach out when we're ready to take on our first families.
   </p>
 
-  <form name="interest" method="POST" data-netlify="true" action="/thank-you.html" class="interest-form">
+  <form name="interest" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html" class="interest-form">
     <input type="hidden" name="form-name" value="interest" />
+    <p style="position:absolute;left:-9999px;" aria-hidden="true"><label>Don't fill this out: <input name="bot-field" tabindex="-1" autocomplete="off" /></label></p>
 
     <div class="form-group">
       <label for="name">Your name</label>
