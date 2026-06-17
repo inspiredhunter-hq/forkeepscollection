@@ -254,21 +254,8 @@
     text-transform: uppercase; color: rgba(245,233,200,0.5);
     margin-bottom: 0.5rem;
   }
-  .form-group input,
-  .form-group textarea {
-    width: 100%;
-    background: rgba(255,255,255,0.06);
-    border: 1px solid rgba(201,168,76,0.3);
-    color: var(--gold-pale);
-    padding: 0.9rem 1.1rem;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.05rem;
-    font-style: italic;
-    outline: none;
-    transition: border-color 0.25s;
-    border-radius: 0;
-    -webkit-appearance: none;
-  }
+.form-group input:not([type="checkbox"]):not([type="radio"]), .form-group textarea { width: 100%; background: rgba(255,255,255,0.06); border: 1px solid rgba(201,168,76,0.3); color: var(--gold-pale); padding: 0.9rem 1.1rem; font-family: 'Cormorant Garamond', serif; font-size: 1.05rem; font-style: italic; outline: none; transition: border-color 0.25s; border-radius: 0; -webkit-appearance: none; }
+  .form-group input[type="checkbox"] { appearance: auto; -webkit-appearance: checkbox; }
   .form-group input::placeholder,
   .form-group textarea::placeholder {
     color: rgba(245,233,200,0.25);
