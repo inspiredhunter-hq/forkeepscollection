@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — For Keeps Collection</title>
+  <meta name="description" content="How For Keeps Collection handles your personal information.">
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --forest:      #1e3d30;
+      --forest-mid:  #2e5c47;
+      --forest-light:#4a7a62;
+      --gold:        #c9a84c;
+      --gold-light:  #e4c97e;
+      --gold-pale:   #f5e9c8;
+      --cream:       #fdf8f0;
+      --warm-white:  #fffdf9;
+      --text-dark:   #101e18;
+      --text-mid:    #3a5040;
+      --text-light:  #6a8070;
+    }
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Jost', sans-serif;
+      background: var(--cream);
+      color: var(--text-dark);
+      overflow-x: hidden;
+    }
+
+    /* NAV */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: rgba(253,248,240,0.94);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(201,168,76,0.2);
+      padding: 0 2rem;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 60px;
+    }
+    .nav-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem; font-style: italic;
+      color: var(--forest);
+      text-decoration: none;
+      letter-spacing: 0.01em;
+    }
+    .nav-back {
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--forest-mid);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .nav-back:hover { color: var(--gold); }
+
+    /* MAIN */
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 100px 2rem 4rem;
+    }
+
+    .page-header {
+      border-bottom: 1px solid var(--gold-pale);
+      padding-bottom: 2rem;
+      margin-bottom: 2.5rem;
+    }
+    .page-header h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2rem, 5vw, 2.8rem);
+      font-weight: 400;
+      color: var(--forest);
+      line-height: 1.15;
+      margin-bottom: 0.75rem;
+    }
+    .page-header .last-updated {
+      font-size: 0.82rem;
+      color: var(--text-light);
+      letter-spacing: 0.05em;
+    }
+
+    section {
+      margin-bottom: 2.5rem;
+    }
+    h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: var(--forest);
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 0.95rem;
+      line-height: 1.75;
+      color: var(--text-mid);
+      margin-bottom: 1rem;
+    }
+    p:last-child { margin-bottom: 0; }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 1rem;
+    }
+    ul li {
+      font-size: 0.95rem;
+      line-height: 1.75;
+      color: var(--text-mid);
+      padding: 0.3rem 0 0.3rem 1.4rem;
+      position: relative;
+    }
+    ul li::before {
+      content: '';
+      position: absolute;
+      left: 0; top: 0.85rem;
+      width: 5px; height: 5px;
+      border-radius: 50%;
+      background: var(--gold);
+    }
+    a {
+      color: var(--forest-mid);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    a:hover { color: var(--gold); }
+
+    .contact-box {
+      background: var(--warm-white);
+      border: 1px solid var(--gold-pale);
+      border-left: 3px solid var(--gold);
+      border-radius: 4px;
+      padding: 1.5rem;
+      margin-top: 1.5rem;
+    }
+    .contact-box p { margin-bottom: 0.4rem; }
+    .contact-box p:last-child { margin-bottom: 0; }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 2.5rem 2rem;
+      border-top: 1px solid var(--gold-pale);
+      margin-top: 4rem;
+    }
+    .footer-logo {
+      display: block;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem;
+      font-style: italic;
+      color: var(--forest);
+      margin-bottom: 0.5rem;
+    }
+    footer p {
+      font-size: 0.82rem;
+      color: var(--text-light);
+      margin-bottom: 0;
+    }
+    footer a {
+      color: var(--text-light);
+    }
+
+    @media (max-width: 600px) {
+      main { padding: 90px 1.25rem 3rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="/" class="nav-logo">For Keeps Collection</a>
+    <a href="/" class="nav-back">Back to site</a>
+  </nav>
+
+  <main>
+    <div class="page-header">
+      <h1>Privacy Policy</h1>
+      <p class="last-updated">Last updated: 20 June 2026</p>
+    </div>
+
+    <section>
+      <h2>Who we are</h2>
+      <p>For Keeps Collection is a memorial website and legacy book service based in the United Kingdom. We offer families a way to honour and preserve the memory of their loved ones through beautifully made digital and printed keepsakes.</p>
+      <p>When this policy refers to "we", "us" or "our", it means For Keeps Collection.</p>
+    </section>
+
+    <section>
+      <h2>What information we collect</h2>
+      <p>When you register your interest through our website, we collect:</p>
+      <ul>
+        <li>Your first name and last name</li>
+        <li>Your email address</li>
+        <li>Your interest areas (memorial website, legacy book, or planning ahead) if you choose to tell us</li>
+      </ul>
+      <p>We do not collect payment details, identification documents, or any sensitive personal data at this stage.</p>
+    </section>
+
+    <section>
+      <h2>How we use your information</h2>
+      <p>We use your information to:</p>
+      <ul>
+        <li>Send you the Home Going Checklist and related resources you signed up to receive</li>
+        <li>Contact you when we are ready to take on our first families</li>
+        <li>Send you occasional emails about memorial websites, keepsake books and family legacy resources, in line with your consent</li>
+      </ul>
+      <p>We will not use your information for anything else without asking you first.</p>
+    </section>
+
+    <section>
+      <h2>Your consent</h2>
+      <p>By registering your interest and ticking the opt-in box, you are giving us permission to email you. You can withdraw that permission at any time by clicking the unsubscribe link in any email we send you, or by contacting us directly.</p>
+      <p>We do not use pre-ticked boxes. Your consent is always your choice.</p>
+    </section>
+
+    <section>
+      <h2>How we store and protect your data</h2>
+      <p>Your information is stored securely in Brevo, our email marketing platform. Brevo is GDPR-compliant and based in the EU. We do not sell, rent or share your personal information with third parties for their own marketing purposes.</p>
+      <p>We keep your data for as long as you remain subscribed. If you unsubscribe, we will suppress your email address to make sure we do not contact you again.</p>
+    </section>
+
+    <section>
+      <h2>Your rights</h2>
+      <p>Under UK data protection law, you have the right to:</p>
+      <ul>
+        <li>Ask us what information we hold about you</li>
+        <li>Ask us to correct or delete your information</li>
+        <li>Object to how we use your information</li>
+        <li>Withdraw your consent at any time</li>
+        <li>Make a complaint to the Information Commissioner's Office (ICO) at <a href="https://ico.org.uk" target="_blank" rel="noopener">ico.org.uk</a></li>
+      </ul>
+      <p>To exercise any of these rights, contact us using the details below. We will respond within 30 days.</p>
+    </section>
+
+    <section>
+      <h2>Cookies</h2>
+      <p>This website does not use tracking cookies or advertising cookies. We may use basic session cookies that are necessary for the site to function. No personal data is collected through cookies.</p>
+    </section>
+
+    <section>
+      <h2>Changes to this policy</h2>
+      <p>If we make any significant changes to this policy, we will update the date at the top of this page. If you are subscribed to our emails, we may also notify you directly.</p>
+    </section>
+
+    <section>
+      <h2>Contact us</h2>
+      <p>If you have any questions about how we handle your personal information, please get in touch.</p>
+      <div class="contact-box">
+        <p><strong>For Keeps Collection</strong></p>
+        <p>Email: <a href="mailto:hello@forkeepscollection.com">hello@forkeepscollection.com</a></p>
+        <p>United Kingdom</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span class="footer-logo">For Keeps Collection</span>
+    <p>A memorial site and legacy book service, made with love. <a href="/">Home</a></p>
+  </footer>
+
+</body>
+</html>
